@@ -1,0 +1,9 @@
+{
+  "name": "karjimut",
+  "private": true,
+  "type": "module",
+  "description": "Short link, home-screen app and phone notifications for the Cashflow app",
+  "dependencies": {
+    "web-push": "3.6.7"
+  }
+}
