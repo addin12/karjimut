@@ -32,3 +32,8 @@ li { margin-bottom: 8px; }
 .msg.bad { color: var(--bad); }
 [hidden] { display: none !important; }
 main, .card, p { overflow-wrap: anywhere; }
+
+.doc { text-align: left; }
+.doc .app-icon { display: block; }
+.doc section { margin-bottom: 28px; }
+code { background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; font-size: 15px; }
