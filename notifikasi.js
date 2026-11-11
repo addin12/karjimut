@@ -1,6 +1,6 @@
 // Turns notifications on for this device: asks permission, subscribes with the app's public key,
 // and hands the subscription back to the web app with the one-time code from its Settings link.
-const EXEC = 'https://script.google.com/macros/s/AKfycby9UzJj48Er3CODSEjSyXlWVwJw_jjctG5-7qLUbxU6vxkV4TFBLTrGrSHLkkjMBfAq/exec';
+const EXEC = 'https://cashflow.addinalayubi12.workers.dev/';
 const VAPID_PUBLIC = 'BI6YualpXodyUorvg4JnHoKEUYyU384TYhRYO6UBGhodLc65Bxp-Rmhs1Qm_y3nFfll5xN_M1DsFa963-NZ6mkQ';
 
 const $ = (id) => document.getElementById(id);

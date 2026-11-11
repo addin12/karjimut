@@ -1,5 +1,5 @@
 // The short link: opens the app (on the screen a path asks for), or once offers to install it.
-const EXEC = 'https://script.google.com/macros/s/AKfycby9UzJj48Er3CODSEjSyXlWVwJw_jjctG5-7qLUbxU6vxkV4TFBLTrGrSHLkkjMBfAq/exec';
+const EXEC = 'https://cashflow.addinalayubi12.workers.dev/';
 const SCREENS = { tambah: 'add', cek: 'review', ringkasan: 'dashboard', transaksi: 'transactions', pengaturan: 'settings' };
 
 const seg = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
