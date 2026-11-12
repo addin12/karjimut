@@ -1,7 +1,7 @@
 // Turns notifications on for this device: asks permission, subscribes with the app's public key,
 // and hands the subscription back to the web app with the one-time code from its Settings link.
 const EXEC = 'https://cashflow.addinalayubi12.workers.dev/';
-const VAPID_PUBLIC = 'BI6YualpXodyUorvg4JnHoKEUYyU384TYhRYO6UBGhodLc65Bxp-Rmhs1Qm_y3nFfll5xN_M1DsFa963-NZ6mkQ';
+const VAPID_PUBLIC = 'BCY1s4-B5rUHX8c8AvmdRSFCbmH34hRmDiE_OvCW1Poxn5ekRohkJmYNKrUTAC56EUcK78BLzhE7uOI-ILzS1LU';
 
 const $ = (id) => document.getElementById(id);
 const say = (text, bad = false) => { $('msg').textContent = text; $('msg').className = `msg ${bad ? 'bad' : ''}`; };
@@ -41,7 +41,7 @@ $('allow').addEventListener('click', async () => {
     await navigator.serviceWorker.ready;
     const permission = await Notification.requestPermission();
     if (permission !== 'granted') {
-      say('Izin ditolak. Buka pengaturan situs di browser, izinkan notifikasi untuk karjimut.vercel.app, lalu coba lagi.', true);
+      say('Izin ditolak. Buka pengaturan situs di browser, izinkan notifikasi untuk karjimut.addinalayubi12.workers.dev, lalu coba lagi.', true);
       $('allow').disabled = false;
       return;
     }

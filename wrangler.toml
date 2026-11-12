@@ -1,0 +1,9 @@
+# The app's own small public site on Cloudflare: install page, short links, the page where a phone turns notifications on, and the pages Google shows for the
+# Household mail reader. Static files only (the Cashflow Worker itself sends the notifications). Deploy: npx wrangler deploy
+name = "karjimut"
+compatibility_date = "2025-09-01"
+
+[assets]
+directory = "./public"
+# the short links (/tambah, /cek, /ringkasan, /transaksi, /pengaturan, /pasang) all open the home page, which sends the person on to the app
+not_found_handling = "single-page-application"
